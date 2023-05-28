@@ -1,0 +1,60 @@
+
+<br>
+<main  class="conteiner  ">
+
+    <h1>Ejercicio: Listar nombres</h1>
+  
+    <div class="cuerpo">
+  
+        <div class="img" >
+            <app-img3></app-img3>
+        </div>
+        <div>
+            <p>El objetivo de este ejercicio es ingresar nombres a traves del formulario y estos se muestren en forma de grilla</p>
+            <p>Para utilizar la siguiente aplicacion, usted debe:</p>
+            <ol>
+              <li>Ingresar nombre en formulario</li>
+              <li>Hacer click al boton agregar </li>
+            </ol>
+            <p>A continuacion se iran mostrando los datos ingresados y ademas, usted puede modificar o eliminar segun sea necesario </p>
+        </div>
+        
+       
+    </div>  
+      
+   
+  </main>
+  
+  
+  
+  <div class="nombres">
+    
+    <br>
+    <!-- Formulario para ingresar nombres -->
+    <input type="text" placeholder="Ingrese un nombre"  [(ngModel)]="nuevoNombre">
+    <button (click)="agregarNombre()">Agregar</button>
+    <br>
+    <br>
+    
+    <!-- Grilla para mostrar los nombres -->
+    <table  >
+        <caption><h3>Nombres</h3></caption>
+        
+      <tbody>
+        <tr  *ngFor="let nombre of nombres; let i = index">
+          <td style="border-right:  solid 1px black;" >{{ i+1 }}</td>
+          <td>{{ nombre }}</td>
+          <td>
+            <button style="background-color: #cf9820;
+                        color: white;" (click)="editarNombre(i)">Editar</button>
+            <button style="background-color: #db2843;
+                        color: white;" (click)="eliminarNombre(i)">Eliminar</button>
+          </td>
+        </tr>
+      </tbody>  
+    </table>
+</div>
+<br>
+<br>
+
+  

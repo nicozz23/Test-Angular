@@ -1,0 +1,12 @@
+@media (max-width: 768px)
+{
+    img {
+  
+      width: 400px;
+     }
+    
+    
+}
+img{
+    border: solid 1px;
+}

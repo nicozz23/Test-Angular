@@ -1,0 +1,60 @@
+h1{
+    text-align: center;
+}
+.nombres{
+    text-align: center;
+    border-radius: 5px;
+   
+
+}
+input {
+    height: 20px;
+    width: 300px;
+    margin-right: 10px;
+}
+table {
+    border: 1px solid rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    
+  }
+
+  p{
+    font-size: large;
+  }
+
+  .conteiner {
+    max-width: 1200px;    
+    margin: 0 auto ;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.img{
+   
+    
+    text-align: center;
+ }
+
+button{
+    border-color: white;
+    border-radius: 5px;
+    margin-right: 2px;
+    background-color: #2674c9; 
+     color: white 
+}
+
+caption{
+    border: 1px solid rgb(0, 0, 0);
+}
+
+@media (min-width: 768px)
+{
+    .cuerpo {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+    }
+}

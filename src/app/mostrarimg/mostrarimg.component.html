@@ -1,0 +1,29 @@
+<br>
+<div class="conteiner">
+    <h1>
+        Ejercicio: Subir imagen jpg
+    </h1>
+    <div class="cuerpo">
+
+        <p>
+            En este ejercico se busca que al subir una imagen desde tus archivos, la imagen se visualize en la pagina
+        </p>
+        <div class="img" >
+            <app-img4></app-img4>
+        </div>
+        
+    </div>
+    <br>
+    <br>
+    <!-- Subir y mostrar imagen -->
+    <div class="subirimg">
+            
+        <input type="file" (change)="onFileSelected($event)" accept=".jpg" #fileInput>
+        <br>
+        <img  *ngIf="imageUrl" [src]="imageUrl" alt="Imagen subida">
+    
+    </div>
+
+</div>
+
+
